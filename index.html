@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Proposta - João Vitor Brighenti Eletricista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <h1>Gerador de Orçamento</h1>
+
+  <label>Nome do Cliente</label>
+  <input id="cliente">
+
+  <label>Endereço</label>
+  <input id="endereco">
+
+  <label>Serviço</label>
+  <textarea id="servico"></textarea>
+
+  <label>Valor Final (R$)</label>
+  <input id="valor" type="number">
+
+  <label>Data do Agendamento</label>
+  <input id="dataAgendamento" type="date">
+
+  <label>Horário</label>
+  <input id="horaAgendamento" type="time">
+
+  <label>WhatsApp do Cliente</label>
+  <input id="telefone" placeholder="Ex: 41999999999">
+
+  <button onclick="gerarPDF()">Gerar PDF</button>
+  <button onclick="enviarWhats()">Enviar WhatsApp</button>
+
+  <h2>Histórico de Orçamentos</h2>
+  <div id="historico"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
